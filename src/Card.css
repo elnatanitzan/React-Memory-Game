@@ -1,0 +1,62 @@
+.card {
+  position: relative;
+  background: none;
+  -webkit-box-shadow: 0 3px 5px -2px #424242;
+          box-shadow: 0 3px 5px -2px #424242;
+  border-radius: 8px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 4px 5px -2px #424242;
+          box-shadow: 0 4px 5px -2px #424242;
+  -webkit-transform: scale(101%);
+          transform: scale(101%);
+}
+
+.card img {
+  border-radius: 8px;
+  width: 120px;
+  display: block;
+  max-height: 140px;
+  max-width: 100px;
+}
+
+.card .front {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transition: -webkit-transform ease-in .2s;
+  transition: -webkit-transform ease-in .2s;
+  transition: transform ease-in .2s;
+  transition: transform ease-in .2s, -webkit-transform ease-in .2s;
+  position: absolute;
+}
+
+.card .back {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform ease-in .2s;
+  transition: -webkit-transform ease-in .2s;
+  transition: transform ease-in .2s;
+  transition: transform ease-in .2s, -webkit-transform ease-in .2s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.flipped {
+  -webkit-box-shadow: 0 3px 5px -2px #424242;
+          box-shadow: 0 3px 5px -2px #424242;
+}
+
+.flipped .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.flipped .back {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,52 @@
+.card {
+    position: relative;
+    background: none;
+    box-shadow: 0 3px 5px -2px #424242;
+    border-radius: 8px;
+    border: 1px solid #424242;
+    
+    &:hover {
+        box-shadow: 0 4px 5px -2px #424242;
+        transform: scale(101%);
+    }
+    
+    img {
+        border-radius: 8px;
+        width: 90px; 
+        height: 140px;
+        display: block;
+        @media screen and (max-width: 400px) {
+            width: 20vw;
+            height: 30vw;
+        }        
+
+    }
+    
+    .front {
+        transform: rotateY(90deg);
+        transition: transform ease-in .2s;
+        position: absolute;
+    }
+
+    .back {
+        cursor: pointer;
+        transition: transform ease-in .2s;
+        transition-delay: .2s;
+    }
+
+}
+
+.flipped {
+    box-shadow: 0 3px 5px -2px #424242;
+   
+    
+    .front { 
+        transform: rotateY(0deg);
+        transition-delay: .2s;
+    }
+
+    .back {
+        transform: rotateY(90deg);
+        transition-delay: 0s;
+    }
+}

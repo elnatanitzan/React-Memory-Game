@@ -1,0 +1,92 @@
+.App {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  height: 100vh;
+}
+
+header {
+  margin-top: 0;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #141414;
+  -webkit-box-shadow: 0 8px 7px -4px #404040;
+          box-shadow: 0 8px 7px -4px #404040;
+}
+
+header h1 {
+  margin: 1rem 0 0 0;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  width: 100%;
+  bottom: 0;
+  background: #141414;
+}
+
+footer span {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+footer span p {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0;
+  display: inline;
+}
+
+footer button {
+  background: #124fc0;
+  -webkit-box-shadow: 0 0 15px -5px #838383;
+          box-shadow: 0 0 15px -5px #838383;
+  -webkit-transition: scale .3s;
+  transition: scale .3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+footer button:hover {
+  background: #0e3c91;
+  -webkit-box-shadow: 0 4px 9px -4px #838383;
+          box-shadow: 0 4px 9px -4px #838383;
+}
+
+footer button:active {
+  -webkit-transform: scale(97%);
+          transform: scale(97%);
+}
+
+.cards {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+/*# sourceMappingURL=App.css.map */

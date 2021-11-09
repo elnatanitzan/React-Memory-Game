@@ -1,0 +1,92 @@
+.App {
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    height: 15%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: #141414;
+    box-shadow: 0 8px 7px -4px #404040;
+
+    h4 { 
+        margin: 0 0 1rem 0;
+    
+    }
+}
+
+.main {
+    height: 70%;
+    // margin: 1rem;
+    padding:auto;
+    display: grid;
+    place-items: center;
+    
+    .cards {
+        max-width: fit-content;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+
+        @media screen and (max-width: 380px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+footer {
+    height: 15%;
+    
+    span {
+        display: inline;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        max-width: fit-content;
+        
+        p {
+            font-size: 30px;
+            display: inline;
+        }
+    
+        .steps {
+            color: yellow;
+            animation: steps 1s ease-in-out infinite alternate;
+        }
+    }
+    
+    .new-game {
+        padding: 1rem;
+    
+        button {
+            display: inline-block;
+            background: #124fc0;
+            box-shadow: 0 0 15px -5px #838383;
+            transition: scale .3s;
+            padding: 5px 10px;
+            margin: 0;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            
+            &:hover {
+                background: darken(#124fc0, 10%);
+                box-shadow: 0 4px 9px -4px #838383;
+            }
+        
+            &:active { transform: scale(97%); }
+        }
+    }
+}
+
+@keyframes steps {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
