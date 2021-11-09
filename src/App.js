@@ -3,12 +3,12 @@ import Card from './Card';
 import './App.scss';
 
 const cardImage = [
-  { "src": '/photos/1.png', matched: false },
-  { "src": '/photos/2.png', matched: false },
-  { "src": '/photos/3.png', matched: false },
-  { "src": '/photos/4.png', matched: false },
-  { "src": '/photos/5.png', matched: false },
-  { "src": '/photos/6.png', matched: false }
+  { "src": '././photos/1.png', matched: false },
+  { "src": '././photos/2.png', matched: false },
+  { "src": '././photos/3.png', matched: false },
+  { "src": '././photos/4.png', matched: false },
+  { "src": '././photos/5.png', matched: false },
+  { "src": '././photos/6.png', matched: false }
 ];
 
 function App() {
