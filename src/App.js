@@ -45,6 +45,7 @@ function App() {
         if (selectedOne.src === selectedTwo.src) {
           selectedOne.matched = true;
           selectedTwo.matched = true;
+
           setCards(cards)
           resetTurn()
         } else {

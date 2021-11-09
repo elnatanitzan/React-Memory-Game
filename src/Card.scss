@@ -4,7 +4,7 @@
     box-shadow: 0 3px 5px -2px #424242;
     border-radius: 8px;
     border: 1px solid #424242;
-    
+
     &:hover {
         box-shadow: 0 4px 5px -2px #424242;
         transform: scale(101%);
@@ -36,6 +36,10 @@
 
 }
 
+.open {
+    animation: correct 1.5s ease-in-out;
+}
+
 .flipped {
     box-shadow: 0 3px 5px -2px #424242;
    
@@ -49,4 +53,11 @@
         transform: rotateY(90deg);
         transition-delay: 0s;
     }
+}
+
+@keyframes correct {
+    from { box-shadow: 0 3px 5px -2px #424242}
+    30% { box-shadow: 0 0 10px -1px #81ff42}
+    70% { box-shadow: 0 0 10px -1px #81ff42}
+    to { box-shadow: 0 3px 5px -2px #424242}
 }

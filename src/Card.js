@@ -9,7 +9,7 @@ export default function Card({ card, handleSelect, disabled, flipped}) {
     }
 
     return (
-        <div className="card">
+        <div className={card.matched === true ? "card open" : "card"}>
            <div className={flipped ? "flipped" : ""}>
               <img className="front" src={card.src} alt={`front of card id: ${card.id}`} />
               <img className="back" src="././photos/card.jpg" alt="cover" onClick={handleClick} />
